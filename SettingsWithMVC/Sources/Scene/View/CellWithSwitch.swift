@@ -15,7 +15,7 @@ class SwitchTableViewCell: UITableViewCell {
     static let identifier = "SwitchTableViewCell"
     
     // MARK: - Configuration
-
+    
     public func configure(with model: SettingCell) {
         label.text = model.title
         iconImageView.image = model.icon
@@ -23,7 +23,7 @@ class SwitchTableViewCell: UITableViewCell {
     }
     
     // MARK: - Views
-
+    
     private let iconContainer : UIView = {
         let view = UIView()
         view.layer.cornerRadius = 6
@@ -61,7 +61,6 @@ class SwitchTableViewCell: UITableViewCell {
     }
     
     // MARK: - Settings
-
     
     private func setupHierarchy() {
         contentView.addSubview(iconContainer)

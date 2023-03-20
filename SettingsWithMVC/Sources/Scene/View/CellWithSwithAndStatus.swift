@@ -11,7 +11,6 @@ import SnapKit
 class StatusTableViewCell: UITableViewCell {
     
     // MARK: - Properties
-
     
     static let identifier = "StatusTableViewCell"
     
@@ -23,9 +22,8 @@ class StatusTableViewCell: UITableViewCell {
         iconContainer.backgroundColor = model.iconBackgroundColor
         statusLabel.text = model.statusTitle
     }
-
+    
     // MARK: - Views
-
     
     private let iconContainer: UIView = {
         let view = UIView()
@@ -53,7 +51,6 @@ class StatusTableViewCell: UITableViewCell {
     }()
     
     // MARK: - Initial
-
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -67,7 +64,6 @@ class StatusTableViewCell: UITableViewCell {
     }
     
     // MARK: - Settings
-
     
     private func setupHierarchy() {
         contentView.addSubview(iconContainer)

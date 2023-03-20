@@ -11,12 +11,11 @@ import SnapKit
 class DetailViewController: UIViewController {
     
     // MARK: - Properties
-
     
     public var model: SettingsCellType?
     
     // MARK: - Configuration
-
+    
     public func fillSettings(with title: String){
         
         switch model {
@@ -32,7 +31,7 @@ class DetailViewController: UIViewController {
     }
     
     // MARK: - Views
-
+    
     private let label: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
@@ -43,7 +42,6 @@ class DetailViewController: UIViewController {
     }()
     
     // MARK: - Settings
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,11 +51,9 @@ class DetailViewController: UIViewController {
     }
     
     func setupLayout() {
-        
         label.snp.makeConstraints{make in
             make.center.equalToSuperview()
             make.trailing.leading.equalToSuperview().inset(60)
-            
         }
     }
 }

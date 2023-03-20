@@ -39,7 +39,6 @@ extension SettingsView: UITableViewDataSource{
                 return UITableViewCell()
             }
             cell.configure(with: model)
-            
             return cell
         case .statusCell(let model):
             guard let cell = tableView.dequeueReusableCell(
@@ -56,5 +55,4 @@ extension SettingsView: UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         50
     }
-    
 }

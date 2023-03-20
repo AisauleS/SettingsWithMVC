@@ -10,18 +10,14 @@ import SnapKit
 
 final class SettingsView: UIView {
     
-    
-    
     // MARK: - Propersties
-
-
-   var models = [Settings]()
+    
+    var models = [Settings]()
     
     // MARK: - Configuration
     
-func  configureView(with model: [Settings]) {
-     self.models = model
-
+    func  configureView(with model: [Settings]) {
+        self.models = model
     }
     
     // MARK: - Views
@@ -35,7 +31,6 @@ func  configureView(with model: [Settings]) {
         tableView.delegate = self
         return tableView
     }()
-    
     
     // MARK: - Initial
     
@@ -65,8 +60,4 @@ func  configureView(with model: [Settings]) {
             make.edges.equalTo(self)
         }
     }
-
-    
-   
-
 }

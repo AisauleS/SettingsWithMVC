@@ -12,12 +12,10 @@ import SnapKit
 class SettingTableViewCell: UITableViewCell {
     
     // MARK: - Propersties
-
     
     static let identifier = "SettingTableViewCell"
     
     // MARK: - Configuration
-
     
     public func configure(with model: SettingCell) {
         label.text = model.title
@@ -25,9 +23,7 @@ class SettingTableViewCell: UITableViewCell {
         iconContainer.backgroundColor = model.iconBackgroundColor
     }
     
-    
     // MARK: - Views
-
     
     private let iconContainer: UIView = {
         let view = UIView()
@@ -48,7 +44,6 @@ class SettingTableViewCell: UITableViewCell {
     }()
     
     // MARK: - Initial
-
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -57,7 +52,6 @@ class SettingTableViewCell: UITableViewCell {
         accessoryType = .disclosureIndicator
     }
     
-
     required init?(coder: NSCoder) {
         fatalError()
     }
